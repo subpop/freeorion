@@ -10,7 +10,7 @@ BASIC_INDUSTRY
                 Focus type = "FOCUS_INDUSTRY"
             ]
             accountinglabel = "FOCUS_INDUSTRY_LABEL"
-            priority = [[EARLY_PRIORITY]]
+            priority = [[DEFAULT_PRIORITY]]
             effects = SetTargetIndustry value = Value + Target.Population * [[INDUSTRY_PER_POP]]
 
         EffectsGroup      // gives human bonuses when AI Aggression set to Beginner
