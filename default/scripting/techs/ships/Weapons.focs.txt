@@ -10,17 +10,7 @@ Tech
         Item type = ShipPart name = "GT_TROOP_POD"
     ]
     effectsgroups =
-        EffectsGroup
-            scope = And [
-                Ship
-                OwnedBy empire = Source.Owner
-                DesignHasPart  name = "SR_WEAPON_1_1"
-            ]
-            accountinglabel = "SR_WEAPON_1_1"
-            effects = [
-                SetMaxCapacity partname = "SR_WEAPON_1_1" value = Value + 5
-                SetMaxSecondaryStat partname = "SR_WEAPON_1_1" value = Value + 1
-            ]
+        [[WEAPON_BASE_EFFECTS(SR_WEAPON_1_1)]]
 
     graphic = "icons/tech/planetary_colonialism.png"
 
@@ -43,14 +33,7 @@ Tech
     researchturns = 2
     prerequisites = "SHP_ROOT_AGGRESSION"
     effectsgroups =
-        EffectsGroup
-            scope = And [
-                Ship
-                OwnedBy empire = Source.Owner
-                DesignHasPart  name = "SR_WEAPON_1_1"
-            ]
-            accountinglabel = "SR_WEAPON_1_2"
-            effects = SetMaxCapacity partname = "SR_WEAPON_1_1" value = Value + 1
+        [[WEAPON_UPGRADE_CAPACITY_EFFECTS(SR_WEAPON_1_1, 1)]]
     graphic = "icons/ship_parts/mass-driver-2.png"
 
 Tech
@@ -62,14 +45,7 @@ Tech
     researchturns = 2
     prerequisites = "SHP_WEAPON_1_2"
     effectsgroups =
-        EffectsGroup
-            scope = And [
-                Ship
-                OwnedBy empire = Source.Owner
-                DesignHasPart name = "SR_WEAPON_1_1"
-            ]
-            accountinglabel = "SR_WEAPON_1_3_DESC"
-            effects = SetMaxCapacity partname = "SR_WEAPON_1_1" value = Value + 1
+        [[WEAPON_UPGRADE_CAPACITY_EFFECTS(SR_WEAPON_1_1, 1)]]
     graphic = "icons/ship_parts/mass-driver-3.png"
 
 Tech
@@ -81,14 +57,7 @@ Tech
     researchturns = 2
     prerequisites = "SHP_WEAPON_1_3"
     effectsgroups =
-        EffectsGroup
-            scope = And [
-                Ship
-                OwnedBy empire = Source.Owner
-                DesignHasPart  name = "SR_WEAPON_1_1"
-            ]
-            accountinglabel = "SR_WEAPON_1_4"
-            effects = SetMaxCapacity partname = "SR_WEAPON_1_1" value = Value + 1
+        [[WEAPON_UPGRADE_CAPACITY_EFFECTS(SR_WEAPON_1_1, 1)]]
     graphic = "icons/ship_parts/mass-driver-4.png"
 
 Tech
@@ -100,6 +69,8 @@ Tech
     researchturns = 8
     prerequisites = "SHP_ROOT_AGGRESSION"
     unlock = Item type = ShipPart name = "SR_WEAPON_2_1"
+    effectsgroups =
+        [[WEAPON_BASE_EFFECTS(SR_WEAPON_2_1)]]
     graphic = "icons/ship_parts/laser-1.png"
 
 Tech
@@ -111,14 +82,7 @@ Tech
     researchturns = 2
     prerequisites = "SHP_WEAPON_2_1"
     effectsgroups =
-        EffectsGroup
-            scope = And [
-                Ship
-                OwnedBy empire = Source.Owner
-                DesignHasPart  name = "SR_WEAPON_2_1"
-            ]
-            accountinglabel = "SR_WEAPON_2_2"
-            effects = SetMaxCapacity partname = "SR_WEAPON_2_1" value = Value + 2
+        [[WEAPON_UPGRADE_CAPACITY_EFFECTS(SR_WEAPON_2_1, 2)]]
     graphic = "icons/ship_parts/laser-2.png"
 
 Tech
@@ -130,14 +94,7 @@ Tech
     researchturns = 2
     prerequisites = "SHP_WEAPON_2_2"
     effectsgroups =
-        EffectsGroup
-            scope = And [
-                Ship
-                OwnedBy empire = Source.Owner
-                DesignHasPart  name = "SR_WEAPON_2_1"
-            ]
-            accountinglabel = "SR_WEAPON_2_3"
-            effects = SetMaxCapacity partname = "SR_WEAPON_2_1" value = Value + 2
+        [[WEAPON_UPGRADE_CAPACITY_EFFECTS(SR_WEAPON_2_1, 2)]]
     graphic = "icons/ship_parts/laser-3.png"
 
 Tech
@@ -149,14 +106,7 @@ Tech
     researchturns = 2
     prerequisites = "SHP_WEAPON_2_3"
     effectsgroups =
-        EffectsGroup
-            scope = And [
-                Ship
-                OwnedBy empire = Source.Owner
-                DesignHasPart  name = "SR_WEAPON_2_1"
-            ]
-            accountinglabel = "SR_WEAPON_2_4"
-            effects = SetMaxCapacity partname = "SR_WEAPON_2_1" value = Value + 2
+        [[WEAPON_UPGRADE_CAPACITY_EFFECTS(SR_WEAPON_2_1, 2)]]
     graphic = "icons/ship_parts/laser-4.png"
 
 Tech
@@ -168,6 +118,8 @@ Tech
     researchturns = 8
     prerequisites = "SHP_WEAPON_2_1"
     unlock = Item type = ShipPart name = "SR_WEAPON_3_1"
+    effectsgroups =
+        [[WEAPON_BASE_EFFECTS(SR_WEAPON_3_1)]]
     graphic = "icons/ship_parts/plasma-1.png"
 
 Tech
@@ -179,14 +131,7 @@ Tech
     researchturns = 2
     prerequisites = "SHP_WEAPON_3_1"
     effectsgroups =
-        EffectsGroup
-            scope = And [
-                Ship
-                OwnedBy empire = Source.Owner
-                DesignHasPart  name = "SR_WEAPON_3_1"
-            ]
-            accountinglabel = "SR_WEAPON_3_2"
-            effects = SetMaxCapacity partname = "SR_WEAPON_3_1" value = Value + 3
+        [[WEAPON_UPGRADE_CAPACITY_EFFECTS(SR_WEAPON_3_1, 3)]]
     graphic = "icons/ship_parts/plasma-2.png"
 
 Tech
@@ -198,14 +143,7 @@ Tech
     researchturns = 2
     prerequisites = "SHP_WEAPON_3_2"
     effectsgroups =
-        EffectsGroup
-            scope = And [
-                Ship
-                OwnedBy empire = Source.Owner
-                DesignHasPart  name = "SR_WEAPON_3_1"
-            ]
-            accountinglabel = "SR_WEAPON_3_3"
-            effects = SetMaxCapacity partname = "SR_WEAPON_3_1" value = Value + 3
+        [[WEAPON_UPGRADE_CAPACITY_EFFECTS(SR_WEAPON_3_1, 3)]]
     graphic = "icons/ship_parts/plasma-3.png"
 
 Tech
@@ -217,14 +155,7 @@ Tech
     researchturns = 2
     prerequisites = "SHP_WEAPON_3_3"
     effectsgroups =
-        EffectsGroup
-            scope = And [
-                Ship
-                OwnedBy empire = Source.Owner
-                DesignHasPart  name = "SR_WEAPON_3_1"
-            ]
-            accountinglabel = "SR_WEAPON_3_4"
-            effects = SetMaxCapacity partname = "SR_WEAPON_3_1" value = Value + 3
+        [[WEAPON_UPGRADE_CAPACITY_EFFECTS(SR_WEAPON_3_1, 3)]]
     graphic = "icons/ship_parts/plasma-4.png"
 
 Tech
@@ -236,6 +167,8 @@ Tech
     researchturns = 10
     prerequisites = "SHP_WEAPON_3_1"
     unlock = Item type = ShipPart name = "SR_WEAPON_4_1"
+    effectsgroups =
+        [[WEAPON_BASE_EFFECTS(SR_WEAPON_4_1)]]
     graphic = "icons/ship_parts/death-ray-1.png"
 
 Tech
@@ -247,14 +180,7 @@ Tech
     researchturns = 3
     prerequisites = "SHP_WEAPON_4_1"
     effectsgroups =
-        EffectsGroup
-            scope = And [
-                Ship
-                OwnedBy empire = Source.Owner
-                DesignHasPart  name = "SR_WEAPON_4_1"
-            ]
-            accountinglabel = "SR_WEAPON_4_2"
-            effects = SetMaxCapacity partname = "SR_WEAPON_4_1" value = Value + 5
+        [[WEAPON_UPGRADE_CAPACITY_EFFECTS(SR_WEAPON_4_1, 5)]]
     graphic = "icons/ship_parts/death-ray-2.png"
 
 Tech
@@ -330,3 +256,29 @@ Tech
     unlock = Item type = ShipPart name = "SP_KRILL_SPAWNER"
 
 #include "/scripting/common/base_prod.macros"
+
+WEAPON_BASE_EFFECTS
+'''        EffectsGroup
+            scope = And [
+                Ship
+                OwnedBy empire = Source.Owner
+                DesignHasPart  name = "@1@"
+            ]
+            accountinglabel = "@1@"
+            effects = [
+                SetMaxCapacity partname = "@1@" value = Value + PartCapacity name = "@1@"
+                SetMaxSecondaryStat partname = "@1@" value = Value + PartSecondaryStat name = "@1@"
+            ]
+'''
+
+WEAPON_UPGRADE_CAPACITY_EFFECTS
+'''
+        EffectsGroup
+            scope = And [
+                Ship
+                OwnedBy empire = Source.Owner
+                DesignHasPart  name = "@1@"
+            ]
+            accountinglabel = "@1@"
+            effects = SetMaxCapacity partname = "@1@" value = Value + @2@
+'''
